@@ -26,7 +26,7 @@ baseurl                  : "/UltBlog"
 repository               : "Ultcrt/ultcrt.github.io"
 teaser                   : "/assets/images/default-teaser.png"
 logo                     : "/assets/images/site-logo-transparent.png"
-masthead_title           : "博客"
+masthead_title           : "Ultcrt的博客"
 words_per_minute         : 200
 comments:
   provider               : "giscus"
@@ -93,6 +93,9 @@ author:
     - label: "BiliBili"
       icon: "fas fa-fw fa-play"
       url: "https://space.bilibili.com/6060911"
+    - label: "Steam"
+      icon: "fab fa-fw fa-steam"
+      url: "https://steamcommunity.com/id/Ultcrt"
 
 # Site Footer
 footer:
@@ -109,7 +112,9 @@ footer:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:zhang_zhe_yuan@outlook.com"
-
+    - label: "Steam"
+      icon: "fab fa-fw fa-steam"
+      url: "https://steamcommunity.com/id/Ultcrt"
 
 # Reading Files
 include:
