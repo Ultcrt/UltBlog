@@ -1,7 +1,6 @@
 backend:
-  name: github
+  name: git-gateway
   branch: master
-  repo: Ultcrt/UltBlog
 
 publish_mode: editorial_workflow
 
