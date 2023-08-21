@@ -23,7 +23,7 @@ collections:
         name: "header"
         widget: "object"
         fields:
-          - {label: "Image", name: "image", widget: "image", default: "https://picsum.photos/1920/640"}
+          - {label: "Overlay Image", name: "overlay_image", widget: "image", default: "https://picsum.photos/1920/640"}
           - {label: "Caption", name: "caption", widget: "string", default: "来源: [**Lorem Picsum**](https://picsum.photos/)"}
           - {label: "Teaser", name: "teaser", widget: "image", default: "/assets/images/site/default-teaser.png"}
       - {label: "Body", name: "body", widget: "markdown"}
