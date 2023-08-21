@@ -1,0 +1,21 @@
+backend:
+  name: github
+  branch: master
+  repo: Ultcrt/UltBlog
+
+publish_mode: editorial_workflow
+
+media_folder: "/assets/images/posts"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "/_posts/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
