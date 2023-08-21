@@ -235,6 +235,5 @@ defaults:
       show_date: true
       toc: true
       toc_label: "Contents"
-      toc_icon: "file-lines"
 
 date_format: "%Y-%m-%d"
