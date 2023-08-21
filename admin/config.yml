@@ -16,6 +16,14 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - {label: "Last Modified Date", name: "last_modified_at", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - label: "Header"
+        name: "header"
+        widget: "object"
+        fields:
+          - {label: "Image", name: "image", widget: "image", default: "https://picsum.photos/1920/640"}
+          - {label: "Caption", name: "caption", widget: "string", default: "来源: [**Lorem Picsum**](https://picsum.photos/)"}
+          - {label: "Teaser", name: "teaser", widget: "image", default: "/assets/images/site/default-teaser.png"}
       - {label: "Body", name: "body", widget: "markdown"}
