@@ -1,6 +1,6 @@
 ---
 title: "文章年份"
-permalink: /year-archive/
+permalink: /years/
 layout: posts
 author_profile: true
 ---
