@@ -18,6 +18,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Last Modified Date", name: "last_modified_at", widget: "datetime"}
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Tags", name: "tags", widget: "list"}
       - label: "Header"
