@@ -20,7 +20,7 @@ title                    : "UltBlog"
 title_separator          : "|"
 subtitle                 : "欢迎"
 name                     : "Ultcrt"
-description              : "基于 Jekyll、minimal-mistakes、DecapCMS 的个人博客。"
+description              : "基于 Jekyll、minimal-mistakes、DecapCMS、Giscus 的个人博客。"
 url                      : "https://ultcrt.github.io"
 baseurl                  : "/UltBlog"
 repository               : "Ultcrt/UltBlog"
@@ -85,7 +85,7 @@ analytics:
 author:
   name             : "Ultcrt"
   avatar           : "/assets/images/site/site-logo.png"
-  bio              : "基于 Jekyll、minimal-mistakes、DecapCMS 的个人博客。"
+  bio              : "热爱开发和游戏，喜欢鼓捣电子设备"
   location         : "浙江 杭州"
   email            : "zhang_zhe_yuan@outlook.com"
   links:
