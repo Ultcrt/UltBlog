@@ -15,8 +15,13 @@
     script.setAttribute('data-category', '{{ site.comments.giscus.category_name }}');
     script.setAttribute('data-category-id', '{{ site.comments.giscus.category_id }}');
     script.setAttribute('data-mapping', '{{ site.comments.giscus.discussion_term | default: "pathname" }}');
+    script.setAttribute('data-strict', '{{ site.comments.giscus.strict_matching | default: 0 }}');
     script.setAttribute('data-reactions-enabled', '{{ site.comments.giscus.reactions_enabled | default: 1 }}');
+    script.setAttribute('data-emit-metadata', '{{ site.comments.giscus.emit_metadata | default: 0 }}');
+    script.setAttribute('data-input-position', '{{ site.comments.giscus.input_position | default: "bottom" }}');
     script.setAttribute('data-theme', '{{ site.comments.giscus.theme | default: "light" }}');
+    script.setAttribute('data-lang', '{{ site.comments.giscus.language | default: "en" }}');
+    script.setAttribute('data-loading', '{{ site.comments.giscus.loading | default: "" }}');
     script.setAttribute('crossorigin', 'anonymous');
 
     commentContainer.appendChild(script);

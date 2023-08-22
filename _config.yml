@@ -35,8 +35,13 @@ comments:
     category_name        : "Announcements"
     category_id          : "DIC_kwDOKIgaLs4CYtL9"
     discussion_term      : "pathname"
+    strict_matching      : "1"
     reactions_enabled    : "1"
+    emit_metadata        : "0"
+    input_position       : "top"
     theme                : "dark"
+    language             : "zh-CN"
+    loading              : "lazy"
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : false
