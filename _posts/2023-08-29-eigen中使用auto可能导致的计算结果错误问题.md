@@ -1,7 +1,7 @@
 ---
 title: Eigen中使用auto可能导致的计算结果错误问题
 date: 2023-08-29T01:59:32.916Z
-last_modified_at: 2023-08-29T01:59:32.927Z
+last_modified_at: 2023-08-29T07:52:47.044Z
 excerpt: 在Eigen中使用auto导致向量类型被识别为 CwiseBinaryOp
   ，该对象相当于存储了运算公式而非计算结果，进而由于变量更新或悬空引用问题，导致运算结果异常，甚至报错。
 categories:
@@ -80,16 +80,16 @@ const auto v2 = (v0 - v1).normalized() * 0.5;
 ## 结论
 使用 Eigen 进行矩阵运算时，不要使用 auto 关键字，从而避免计算错误或是程序报错。
 > *"In short: do not use the auto keywords with Eigen's expressions, unless you are 100% sure about what you are doing. In particular, do not use the auto keyword as a replacement for a Matrix<> type."*  
-> 出处：[C++11 and the auto keyword | Common Pitfalls | Eigen Document](https://eigen.tuxfamily.org/dox/TopicPitfalls.html#title3)
+> 出处：[C++11 and the auto keyword \| Common Pitfalls \| Eigen Document](https://eigen.tuxfamily.org/dox/TopicPitfalls.html#title3)
 
 ## 参考资料
-[1] [Wrong results using auto with Eigen | StackOverflow](https://stackoverflow.com/questions/31099246/wrong-results-using-auto-with-eigen)
+[1] [Wrong results using auto with Eigen \| StackOverflow](https://stackoverflow.com/questions/31099246/wrong-results-using-auto-with-eigen)
 
-[2] [Erroneous use of auto type specifier with Eigen objects | StackOverflow](https://stackoverflow.com/questions/58957421/erroneous-use-of-auto-type-specifier-with-eigen-objects)
+[2] [Erroneous use of auto type specifier with Eigen objects \| StackOverflow](https://stackoverflow.com/questions/58957421/erroneous-use-of-auto-type-specifier-with-eigen-objects)
 
-[3] [Eigen evaluation with an auto hits temporal | StackOverflow](https://stackoverflow.com/questions/72833132/eigen-evaluation-with-an-auto-hits-temporal)
+[3] [Eigen evaluation with an auto hits temporal \| StackOverflow](https://stackoverflow.com/questions/72833132/eigen-evaluation-with-an-auto-hits-temporal)
 
-[4] [Common Pitfalls | Eigen Document](https://eigen.tuxfamily.org/dox/TopicPitfalls.html)
+[4] [Common Pitfalls \| Eigen Document](https://eigen.tuxfamily.org/dox/TopicPitfalls.html)
 
 
 
