@@ -80,16 +80,16 @@ const auto v2 = (v0 - v1).normalized() * 0.5;
 ## 结论
 使用 Eigen 进行矩阵运算时，不要使用 auto 关键字，从而避免计算错误或是程序报错。
 > *"In short: do not use the auto keywords with Eigen's expressions, unless you are 100% sure about what you are doing. In particular, do not use the auto keyword as a replacement for a Matrix<> type."*  
-> 出处：[C++11 and the auto keyword | Common Pitfalls | Eigen Document](https://eigen.tuxfamily.org/dox/TopicPitfalls.html#title3)
+> 出处：[C++11 and the auto keyword \| Common Pitfalls \| Eigen Document](https://eigen.tuxfamily.org/dox/TopicPitfalls.html#title3)
 
 ## 参考资料
-[1] [Wrong results using auto with Eigen | StackOverflow](https://stackoverflow.com/questions/31099246/wrong-results-using-auto-with-eigen)
+[1] [Wrong results using auto with Eigen \| StackOverflow](https://stackoverflow.com/questions/31099246/wrong-results-using-auto-with-eigen)
 
-[2] [Erroneous use of auto type specifier with Eigen objects | StackOverflow](https://stackoverflow.com/questions/58957421/erroneous-use-of-auto-type-specifier-with-eigen-objects)
+[2] [Erroneous use of auto type specifier with Eigen objects \| StackOverflow](https://stackoverflow.com/questions/58957421/erroneous-use-of-auto-type-specifier-with-eigen-objects)
 
-[3] [Eigen evaluation with an auto hits temporal | StackOverflow](https://stackoverflow.com/questions/72833132/eigen-evaluation-with-an-auto-hits-temporal)
+[3] [Eigen evaluation with an auto hits temporal \| StackOverflow](https://stackoverflow.com/questions/72833132/eigen-evaluation-with-an-auto-hits-temporal)
 
-[4] [Common Pitfalls | Eigen Document](https://eigen.tuxfamily.org/dox/TopicPitfalls.html)
+[4] [Common Pitfalls \| Eigen Document](https://eigen.tuxfamily.org/dox/TopicPitfalls.html)
 
 
 
