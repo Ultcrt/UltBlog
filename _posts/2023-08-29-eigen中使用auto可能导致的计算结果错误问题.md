@@ -1,7 +1,7 @@
 ---
 title: Eigen中使用auto可能导致的计算结果错误问题
 date: 2023-08-29T01:59:32.916Z
-last_modified_at: 2023-08-29T01:59:32.927Z
+last_modified_at: 2023-08-29T07:52:47.044Z
 excerpt: 在Eigen中使用auto导致向量类型被识别为 CwiseBinaryOp
   ，该对象相当于存储了运算公式而非计算结果，进而由于变量更新或悬空引用问题，导致运算结果异常，甚至报错。
 categories:
