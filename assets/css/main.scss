@@ -7,3 +7,8 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Allow breaking URLs or long words
+.archive__item-excerpt {
+  word-wrap:break-word;
+}
