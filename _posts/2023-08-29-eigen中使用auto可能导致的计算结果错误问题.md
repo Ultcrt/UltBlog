@@ -50,7 +50,7 @@ std::cout << "B: " << v2 << std::endl;
 ```c++
 Eigen::Vector3d v0(0, 1, 2), v1(0, -1, 2);
 
-const auto v2 = v0 + v1;    // 实际类型为 
+const auto v2 = v0 + v1;    // 实际类型为 CwiseBinaryOp
 
 std::cout << "A: " << v2 << std::endl;
 
