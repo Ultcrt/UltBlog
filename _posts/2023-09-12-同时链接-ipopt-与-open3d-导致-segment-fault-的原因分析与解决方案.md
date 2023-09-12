@@ -104,9 +104,9 @@ g++ ... libmkl_intel_lp64.a libmkl_gnu_thread.a libmkl_core.a -lgomp -lpthread -
 ```shell
 --with-lapack-lflags="-Wl,--no-as-needed -Wl,--start-group,\
 ${MKLROOT}/lib/intel64/libmkl_intel_lp64.a,\
-${MKLROOT}/lib/intel64/libmkl_intel_thread.a,\
+${MKLROOT}/lib/intel64/libmkl_gnu_thread.a,\
 ${MKLROOT}/lib/intel64/libmkl_core.a,--end-group \
--liomp5 -lpthread -lm -ldl"
+-lgomp -lpthread -lm -ldl"
 ```
 使用上述标志，libtool就能够将正确的标志次序传输给链接器，从而解决循环依赖的问题，生成能够正常使用的 Ipopt 库。
 
