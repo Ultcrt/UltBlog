@@ -5,13 +5,13 @@ search: false
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+// Change skin style
+$primary-color: #A80000;
 
 // Allow breaking URLs or long words
 .archive__item-excerpt {
   word-wrap:break-word;
 }
 
-// Change skin style
-$primary-color: #A80000;
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
