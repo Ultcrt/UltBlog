@@ -17,7 +17,7 @@ tags:
 header:
   overlay_image: https://picsum.photos/1920/640
   caption: "来源: [**Lorem Picsum**](https://picsum.photos/)"
-  teaser: /assets/images/site/default-teaser.png
+  teaser: https://ultcrt.github.io/UltBlog/assets/images/site/default-teaser.png
 ---
 以下内容总结自本人与 Ipopt 开发者的[讨论](https://github.com/coin-or/Ipopt/discussions/694)。
 
