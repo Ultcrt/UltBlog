@@ -11,6 +11,16 @@
 <meta name="msapplication-config" content="{{ '/assets/images/site/browserconfig.xml' | relative_url }}">
 <meta name="theme-color" content="#ffffff">
 
+<!-- Make MathJax parse $...$ as inline equation -->
+<script type="text/x-mathjax-config">
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      processEscapes: true,
+    }
+  }
+</script>
+
 <!-- Add support for MathJax (Math formula)-->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
